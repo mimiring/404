@@ -31,6 +31,9 @@ body {
     right: 0;
     bottom: 30px;
 }
+.footer .kakaopay_wrap {
+    display: none;
+}
 .footer .voc_description {
     height: 16px;
     font-size: 14px;
@@ -40,4 +43,47 @@ body {
 
 .footer .voc_description .voc_link {
     text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+    .section {
+        margin-bottom: 54px;
+    }
+    .section .emo_wrap {
+        margin: 107px 0 54px 0;
+    }
+    .section .emo_wrap .emo_gif {
+        width: 160px;
+        height: 160px;
+    }
+    .section .warning {
+        height: 31px;
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+    .section .warning_description {
+        height: 21px;
+        font-size: 18px;
+    }
+
+    .footer .kakaopay_wrap {
+        display: block;
+        margin: 0 auto 12px;
+        line-height: 60px;
+        width: 240px;
+        height: 60px;
+        background-color: #ffcd00;
+        font-size: 20px;
+    }
+    .footer .kakaopay_wrap .kakaopay_description {
+
+        text-align: center;
+    }
+    .footer .kakaopay_wrap .kakaopay_description .kakaopay_name {
+        font-weight: bold;
+    }
+    .footer {
+        position: static;
+    }
 }
