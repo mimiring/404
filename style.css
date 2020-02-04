@@ -1,0 +1,43 @@
+body {
+    font-family: Apple SD GOthic Neo, 'Malgun Gothic', '맑은 고딕', sans-serif;
+    min-width: 320px;
+}
+
+.section .emo_wrap {
+    margin: 76px 0 24px 0;
+    text-align: center;
+}
+.section .emo_wrap .emo_gif {
+    width: 120px;
+    height: 120px;
+}
+.section .warning {
+    margin-bottom: 5px;
+    font-size: 22px;
+    height: 26px;
+    color: #000;
+    text-align: center;
+}
+.section .warning_description {
+    font-size: 16px;
+    height: 19px;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+.footer .voc_description {
+    height: 16px;
+    font-size: 14px;
+    color: #b2b2b2;
+    text-align: center;
+}
+
+.footer .voc_description .voc_link {
+    text-decoration: underline;
+}
