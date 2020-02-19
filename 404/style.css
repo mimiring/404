@@ -28,7 +28,7 @@ body {
 .error_wrap .warning {
     margin-bottom: 5px;
     font-size: 22px;
-    height: 26px;
+    line-height: 26px;
     color: #000;
     text-align: center;
 }
@@ -63,12 +63,12 @@ body {
     .error_wrap .gif_wrap {
         margin: 0;
     }
-    .error_wrap .gif_wrap .emo_gif {
+    .error_wrap .gif_wrap .gif_404 {
         width: 160px;
         height: 160px;
     }
     .error_wrap .warning {
-        height: 31px;
+        line-height: 31px;
         font-size: 26px;
         margin-bottom: 6px;
     }
