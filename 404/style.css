@@ -1,89 +1,101 @@
+/* reset */
+html, body, header, footer, div, p, h1, button {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 body {
     font-family: Apple SD GOthic Neo, 'Malgun Gothic', '맑은 고딕', sans-serif;
     min-width: 320px;
 }
 
-.section .emo_wrap {
+.error_wrap .gif_wrap {
     margin: 76px 0 24px 0;
+    font-size: 0;
     text-align: center;
 }
-.section .emo_wrap .emo_gif {
+.gif_404 {
     width: 120px;
     height: 120px;
 }
-.section .warning {
+.error_wrap .warning {
     margin-bottom: 5px;
     font-size: 22px;
-    height: 26px;
+    line-height: 26px;
     color: #000;
     text-align: center;
 }
-.section .warning_description {
+.error_wrap .warning_description {
     font-size: 16px;
     height: 19px;
     color: #7f7f7f;
     text-align: center;
 }
-
-.footer {
+ .kakaopay_wrap {
+    display: none;
+}
+ .voc_description {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 30px;
-}
-.footer .kakaopay_wrap {
-    display: none;
-}
-.footer .voc_description {
     height: 16px;
     font-size: 14px;
     color: #b2b2b2;
     text-align: center;
 }
-
-.footer .voc_description .voc_link {
+ .voc_description .voc_link {
     text-decoration: underline;
 }
 
 
 @media screen and (min-width: 768px) {
-    .section {
-        margin-bottom: 54px;
-    }
-    .section .emo_wrap {
+    .error_wrap {
         margin: 107px 0 54px 0;
     }
-    .section .emo_wrap .emo_gif {
+    .error_wrap .gif_wrap {
+        margin: 0;
+    }
+    .error_wrap .gif_wrap .gif_404 {
         width: 160px;
         height: 160px;
     }
-    .section .warning {
-        height: 31px;
+    .error_wrap .warning {
+        line-height: 31px;
         font-size: 26px;
         margin-bottom: 6px;
     }
-    .section .warning_description {
+    .error_wrap .warning_description {
         height: 21px;
         font-size: 18px;
     }
-
-    .footer .kakaopay_wrap {
+.kakaopay_wrap {
         display: block;
-        margin: 0 auto 12px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+ .kakaopay_wrap .kakaopay_button {
+        border: none;
+        margin: 0 auto;
         line-height: 60px;
         width: 240px;
         height: 60px;
         background-color: #ffcd00;
         font-size: 20px;
     }
-    .footer .kakaopay_wrap .kakaopay_description {
-
-        text-align: center;
-    }
-    .footer .kakaopay_wrap .kakaopay_description .kakaopay_name {
+ .kakaopay_wrap .kakaopay_button .kakaopay_name {
         font-weight: bold;
     }
-    .footer {
+ .voc_description {
         position: static;
+        font-size: 12px;
+        height: 14px;
     }
 }
