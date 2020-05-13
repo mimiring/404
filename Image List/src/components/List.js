@@ -1,14 +1,14 @@
-const api = (query) => {
-  const url = 'https://api.unsplash.com/photos/';
-  const accessKey = 'ssnEAeK6VhlA8nKUV3Q5FIdaKgCc5oFbDFa0-nl5G2M';
-  return fetch(`${url}?client_id=${accessKey}&query=${query}`)
-    .then(res => res.json())
-}
+import API from '../utils/api.js';
 
-class List {
+export default class List {
+  $list = null;
+  state = {
+    data:[],
+    loading: false
+  };
+
   constructor() {
     this.$list = document.querySelector('.img_list');
-    this.state = {};
   }
 
   setState(newState){
@@ -21,11 +21,11 @@ class List {
   }
 
   getList(query) {
-    api(query).then(data => {
-        this.setState({
-          data
-        })
+    API.fetchList(query).then(data => {
+      this.setState({
+        data
       })
+    });
   }
 
   render() {
@@ -42,5 +42,3 @@ class List {
   }
 }
 
-const list = new List();
-list.getList('apple');
