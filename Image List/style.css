@@ -41,6 +41,8 @@ ul{
 }
 
 .img_list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
   margin: 0 10px;
   padding: 0;
   font-size: 0;
@@ -48,7 +50,7 @@ ul{
 
 .img_item {
   display: inline-block;
-  width: 50%;
+  /* width: 50%; */
   vertical-align: top;
 }
 
