@@ -8,10 +8,24 @@
 </head>
 <body>
   <section class="img_section">
-    <div class="search_wrap">
-      <input type="text" class="search" placeholder="Search">
+    <div class="search_box">
+      <div class="search_wrap">
+        <input type="text" class="search" placeholder="Search">
+      </div>
+      <ul class="keyword_list">
+        <li class="keyword">
+          <a class="last_search" href="">지난 검색어</a>
+          <a class="delete_btn" href="">X</a>
+        </li>
+      </ul>
     </div>
-    <ul class="img_list"></ul>
+
+    <div class="blank">검색어를 입력해주세요.</div>
+    <div class="none">검색 결과가 없습니다.</div>
+    <div class="loading">이미지를 로드중입니다.</div>
+    <ul class="img_list">
+      
+    </ul>
   </section>
   <script src="./index.js" type="module"></script>
 </body>
