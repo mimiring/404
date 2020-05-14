@@ -7,26 +7,36 @@
   <title>📃이미지 리스트</title>
 </head>
 <body>
-  <section class="img_section">
-    <div class="search_box">
-      <div class="search_wrap">
-        <input type="text" class="search" placeholder="Search">
-      </div>
-      <ul class="keyword_list">
-        <li class="keyword">
-          <a class="last_search" href="">지난 검색어</a>
-          <a class="delete_btn" href="">X</a>
-        </li>
-      </ul>
+  <section class="main">
+    <div class="search_wrap">
+      <input type="text" class="search" placeholder="Search">
     </div>
-
-    <div class="blank">검색어를 입력해주세요.</div>
-    <div class="none">검색 결과가 없습니다.</div>
-    <div class="loading">이미지를 로드중입니다.</div>
-    <ul class="img_list">
-      
+    <ul class="keyword_list">
+      <li class="keyword">
+        <a class="keyword_text" href="#" data-keyword="지난 검색어">지난 검색어</a>
+        <a class="delete_btn" href="#">X</a>
+      </li>
     </ul>
+
+    <section class="contents">
+      <div class="initial">검색어를 입력해주세요.</div>
+      <div class="no_result">검색 결과가 없습니다.</div>
+      <div class="loading">이미지를 로드중입니다.</div>
+      
+      <ul class="img_list"></ul>
+    </section>
   </section>
+  <div class="dimmed"></div>
+  <div class="popup">
+    <a class="popup_close_btn" href="#" role="button" aria-label="팝업 닫기"></a>
+    <div class="popup_image_wrap">
+      <img class="popup_image" src="https://via.placeholder.com/300x150/09f/fff" alt="임시" width="100%" height="auto">
+      <!-- [D] 이미지가 로딩중일때 보여줍니다.-->
+      <div class="popup_image_placeholder"></div>
+    </div>
+    <strong class="popup_image_title">"아쭈 멋진 사진입니다."</strong>
+  </div>
+
   <script src="./index.js" type="module"></script>
 </body>
 </html>
