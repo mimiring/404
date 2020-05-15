@@ -32,9 +32,9 @@ export default class List {
     const html = this.state.data.map((item) => {
       return `
         <li class="img_item">
-          <div class="img_wrap">
+          <a class="img_wrap" href="#">
             <img class="img" src="${item.urls.regular}" alt="${item.alt_description}">
-          </div>
+          </a>
         </li>
       `;
     });

@@ -132,7 +132,7 @@ a {
 }
 
 .img_list {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(2, minmax(220px, 1fr));
   margin: 0 10px;
   padding: 0;
@@ -145,6 +145,7 @@ a {
 }
 
 .img_wrap{
+  display:block;
   margin: 10px;
   background-color: rgb(38,38,38);
   border-radius: 5px;
@@ -153,11 +154,12 @@ a {
 
 .img {
   width: 100%;
+  pointer-events: none;
 }
 
 /* 팝업 영역 */
 .dimmed{
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   bottom: 0;
@@ -168,7 +170,7 @@ a {
 }
 
 .popup{
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;

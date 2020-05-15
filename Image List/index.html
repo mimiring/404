@@ -19,11 +19,17 @@
     </ul>
 
     <section class="contents">
-      <div class="initial">검색어를 입력해주세요.</div>
+      <!-- <div class="initial">검색어를 입력해주세요.</div>
       <div class="no_result">검색 결과가 없습니다.</div>
-      <div class="loading">이미지를 로드중입니다.</div>
+      <div class="loading">이미지를 로드중입니다.</div> -->
       
-      <ul class="img_list"></ul>
+      <ul class="img_list">
+        <!-- <li class="img_item">
+          <a class="img_wrap">
+              <img class="img" src="" alt="">
+          </a>
+        </li> -->
+      </ul>
     </section>
   </section>
   <div class="dimmed"></div>
@@ -38,5 +44,26 @@
   </div>
 
   <script src="./index.js" type="module"></script>
+  <script>
+    const imageList = document.querySelector('.img_list');
+    const dimmedLayer = document.querySelector('.dimmed');
+    const popupCloseBtn = document.querySelector('.popup_close_btn');
+
+    function imgClick(e) {
+      console.log(e.target);
+      if(e.target.nodeName !== 'A') return;
+      console.log('어허');
+      dimmedLayer.style.display = 'block';
+      popupCloseBtn.parentElement.style.display = 'block';
+    }
+
+    function popupCloseClick(e) {
+      dimmedLayer.style.display = 'none';
+      e.target.parentNode.style.display = 'none';
+    }
+
+    popupCloseBtn.addEventListener('click', popupCloseClick);
+    imageList.addEventListener('click', imgClick);
+  </script>
 </body>
 </html>
